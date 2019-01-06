@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageViewMainButton"
+        android:layout_width="320dp"
+        android:layout_height="350dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="85dp"
+        app:srcCompat="@drawable/startpage_house1" />
+
+    <Button
+        android:id="@+id/buttonGarageDoor"
+        android:layout_width="153dp"
+        android:layout_height="167dp"
+        android:layout_alignBottom="@+id/imageViewMainButton"
+        android:layout_centerHorizontal="true"
+        android:onClick="openGarage" />
+
+    <Button
+        android:id="@+id/buttonWatering"
+        android:layout_width="157dp"
+        android:layout_height="184dp"
+        android:layout_alignEnd="@+id/imageViewMainButton"
+        android:layout_alignTop="@+id/imageViewMainButton"
+        android:onClick="openWateringMenu" />
+
+    <Button
+        android:id="@+id/buttonTemperature"
+        android:layout_width="155dp"
+        android:layout_height="183dp"
+        android:layout_alignStart="@+id/imageViewMainButton"
+        android:layout_alignTop="@+id/buttonWatering"
+        android:onClick="openTemperatureMenu" />
+
+    <Button
+        android:id="@+id/buttonSettings"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin = "10dp"
+        android:onClick="openSettingsMenu"
+        android:background="@drawable/settings_button"/>
+
+    <ImageView
+        android:id="@+id/imageViewConnectionStatus2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin = "10dp"
+        android:layout_toRightOf="@id/imageViewConnectionStatus1"
+        app:srcCompat="@drawable/connection_nok" />
+
+    <ImageView
+        android:id="@+id/imageViewConnectionStatus1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_margin = "10dp"
+        app:srcCompat="@drawable/connection_nok" />
+
+
+</RelativeLayout>

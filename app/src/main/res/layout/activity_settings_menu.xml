@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".SettingsMenu">
+
+
+    <Button
+        android:id="@+id/buttonResetSettings"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="30dp"
+        android:text="Reset"
+        android:onClick="resetPressed"/>
+
+    <Button
+        android:id="@+id/buttonApplySettings"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="30dp"
+        android:text = "Apply"
+        android:onClick="applyPressed"/>
+
+    <ImageView
+        android:id="@+id/imageViewSettingsIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:src="@drawable/settings_button" />
+
+    <TextView
+        android:id="@+id/textViewSettingsMenuText"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/imageViewSettingsIcon"
+        android:layout_toEndOf="@+id/imageViewSettingsIcon"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:text="Network Settings"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewRB1IPText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextRBIP1"
+        android:layout_alignStart="@+id/buttonResetSettings"
+        android:layout_marginBottom="-210dp"
+        android:text="Raspberry 1 IP" />
+
+    <EditText
+        android:id="@+id/editTextRBIP1"
+        android:layout_width="160dp"
+        android:layout_height="43dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/buttonResetSettings"
+        android:layout_marginTop="210dp"
+        android:digits="0123456789."
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/colorBlue"
+        android:background="@drawable/rounded_corner"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/textViewCurrentIPLabel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewRB1IPText"
+        android:layout_toEndOf="@+id/editTextRBIP1"
+        android:text="Current IP" />
+
+    <TextView
+        android:id="@+id/textViewCurrentIPLabel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/editTextRBIP1"
+        android:layout_below="@id/textViewCurrentIPRB1"
+        android:layout_marginTop="35dp"
+        android:text="Current IP" />
+
+    <TextView
+        android:id="@+id/textViewRB2IPText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/buttonResetSettings"
+        android:layout_below="@id/editTextRBIP1"
+        android:layout_marginTop="35dp"
+        android:text="Raspberry 2 IP" />
+
+    <EditText
+        android:id="@+id/editTextRBIP2"
+        android:layout_width="160dp"
+        android:layout_height="43dp"
+        android:layout_alignStart="@+id/buttonResetSettings"
+        android:layout_below="@id/textViewRB2IPText2"
+        android:digits="0123456789."
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/colorBlue"
+        android:background="@drawable/rounded_corner"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/textViewCurrentIPRB1"
+        android:layout_width="160dp"
+        android:layout_height="43dp"
+        android:layout_alignTop="@+id/editTextRBIP1"
+        android:layout_toEndOf="@+id/editTextRBIP1"
+        android:gravity="center"
+        android:text="RB1 Current IP"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/rounded_corner2"/>
+
+    <TextView
+        android:id="@+id/textViewCurrentIPRB2"
+        android:layout_width="160dp"
+        android:layout_height="43dp"
+        android:layout_alignTop="@+id/editTextRBIP2"
+        android:layout_toEndOf="@+id/editTextRBIP1"
+        android:gravity="center"
+        android:text="RB2 Current IP"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/rounded_corner2"/>
+
+
+</RelativeLayout>

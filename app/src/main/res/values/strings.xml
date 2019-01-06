@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">HomeAuto</string>
+    <string name="defaultIP1">192.168.0.42</string>
+    <string name="defaultIP2">192.168.0.43</string>
+
+
+    <string name="openGarage">Open garage</string>
+    <string name="setTemp_M1_Office">Set temperature in basement office to: </string>
+    <string name="setTemp_B_Bedroom">Set temperature in ground floor bedroom to: </string>
+    <string name="setTemp_B_Office">Set temperature in ground floor office to: </string>
+    <string name="setTemp_B_Wardrobe">Set temperature in ground floor wardrobe to: </string>
+    <string name="setTemp_B_LivingRoom">Set temperature in ground floor living room to: </string>
+    <string name="setTemp_B_Kitchen">Set temperature in ground floor kitchen to: </string>
+    <string name="setTemp_B_Bathroom">Set temperature in ground floor bathroom to: </string>
+    <string name="setTemp_U_BedroomZsofi">Set temperature in upper floor bedroom, Zsofi to: </string>
+    <string name="setTemp_U_BedroomGeri">Set temperature in upper floor bedroom, Geri to: </string>
+    <string name="setTemp_U_BedroomBali">Set temperature in upper floor bedroom, Bali to: </string>
+    <string name="setTemp_U_LivingRoom">Set temperature in upper floor living room to: </string>
+    <string name="setTemp_U_Kitchen">Set temperature in upper floor kitchen to: </string>
+    <string name="setTemp_U_Bathroom">Set temperature in upper floor bathroom to: </string>
+
+    <string name="openCircle1">Turn on Circle 1 (next to the garage)!</string>
+    <string name="closeCircle1">Turn off Circle 1 (next to the garage)!</string>
+    <string name="openCircle2">Turn on Circle 2 (behind the house)!</string>
+    <string name="closeCircle2">Turn off Circle 2 (behind the house)!</string>
+    <string name="openCircle3">Turn on Circle 3 (left side of the house)!</string>
+    <string name="closeCircle3">Turn off Circle 3 (left side of the house)!</string>
+    <string name="openCircle4">Turn on Circle 4 (right side of the house)!</string>
+    <string name="closeCircle4">Turn off Circle 4 (right side of the house)!</string>
+    <string name="openCircle5">Turn on Circle 5 (in front of the house)!</string>
+    <string name="closeCircle5">Turn off Circle 5 (in front of the house)!</string>
+    <string name="openCircleAll">Turn on all circles! </string>
+    <string name="closeCircleAll">Turn off all circles! </string>
+
+    <integer name="m1_officeDefaultTemp">23</integer>
+    <integer name="b_bedroomDefaultTemp">22</integer>
+    <integer name="b_officeDefaultTemp">21</integer>
+    <integer name="b_wardrobeDefaultTemp">20</integer>
+    <integer name="b_livingRoomDefaultTemp">19</integer>
+    <integer name="b_kitchenDefaultTemp">18</integer>
+    <integer name="b_bathroomDefaultTemp">17</integer>
+    <integer name="u_bedroomZsofiDefaultTemp">16</integer>
+    <integer name="u_bedroomGeriDefaultTemp">15</integer>
+    <integer name="u_bedroomBaliDefaultTemp">14</integer>
+    <integer name="u_livingRoomDefaultTemp">13</integer>
+    <integer name="u_kitchenDefaultTemp">12</integer>
+    <integer name="u_bathroomDefaultTemp">11</integer>
+</resources>

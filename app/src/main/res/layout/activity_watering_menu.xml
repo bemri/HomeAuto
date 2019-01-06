@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".WateringMenu">
+
+
+    <ImageView
+        android:id="@+id/imageViewWaterIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/watering_big" />
+
+    <TextView
+        android:id="@+id/textViewWaterMenuText"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/imageViewWaterIcon"
+        android:layout_toEndOf="@+id/imageViewWaterIcon"
+        android:layout_marginLeft="20dp"
+        android:textSize="22dp"
+        android:gravity="center"
+        android:text="WATER CONTROL"
+        android:textStyle="bold" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_below="@id/textViewWaterMenuText"
+    android:layout_marginTop="25dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:background="@drawable/rounded_corner"
+    android:gravity="center">
+    <LinearLayout
+        android:id="@+id/LinearLayout1w"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@id/textViewWaterMenuText"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/buttonWater1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/rounded_corner3"
+            android:src="@drawable/watering_button_off"
+            android:onClick="button1Clicked"/>
+
+        <ImageView
+            android:id="@+id/imageViewGarage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/garage"
+            android:background="@drawable/rounded_corner3"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/LinearLayout2w"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/buttonWater2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_corner3"
+            android:src="@drawable/watering_button_off"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:onClick="button2Clicked"/>
+
+        <Button
+            android:id="@+id/buttonWaterSilent1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout3w"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/LinearLayout2w"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/buttonWater3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/rounded_corner3"
+            android:src="@drawable/watering_button_off"
+            android:onClick="button3Clicked"/>
+
+        <ImageView
+            android:id="@+id/imageViewHouse"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:src="@drawable/house"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/rounded_corner3"
+            android:onClick="allClicked"/>
+
+        <ImageButton
+            android:id="@+id/buttonWater4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/rounded_corner3"
+            android:src="@drawable/watering_button_off"
+            android:onClick="button4Clicked"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout4w"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonWaterSilent2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <ImageButton
+            android:id="@+id/buttonWater5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rounded_corner3"
+            android:src="@drawable/watering_button_off"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:onClick="button5Clicked"/>
+
+        <Button
+            android:id="@+id/buttonWaterSilent3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>
